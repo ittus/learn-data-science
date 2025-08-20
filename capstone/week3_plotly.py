@@ -81,7 +81,7 @@ app.layout = html.Div(children=[
               Input(component_id='site-dropdown', component_property='value'))
 
 def get_pie_chart(entered_site):    
-    if entered_site == 'ALL':
+    if entered_site == 'All Sites':
         fig_pie = px.pie(spacex_df, 
                      values='class', 
                      names='Launch Site', 
